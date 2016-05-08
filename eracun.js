@@ -255,6 +255,7 @@ streznik.post('/prijava', function(zahteva, odgovor) {
   });
 })
 
+
 // Prikaz strani za prijavo
 streznik.get('/prijava', function(zahteva, odgovor) {
   vrniStranke(function(napaka1, stranke) {
