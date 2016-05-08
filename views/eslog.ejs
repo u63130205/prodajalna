@@ -173,17 +173,17 @@
 			<NazivNaslovPodjetja>
 				<VrstaPartnerja>BY</VrstaPartnerja>
 				<NazivPartnerja>
-				<NazivPartnerja1><%= narocnik[0].FirstName %> <%= narocnik[0].LastName %></NazivPartnerja1>
- 				<NazivPartnerja2><%= narocnik[0].Company %></NazivPartnerja2>
+				<NazivPartnerja1><%= stranka[0].FirstName + " "+ stranka[0].LastName %></NazivPartnerja1>
+ 				<NazivPartnerja2><%= stranka[0].Company %></NazivPartnerja2>
  				<NazivPartnerja3></NazivPartnerja3>
  				<NazivPartnerja4></NazivPartnerja4>
 				</NazivPartnerja>
 				<Ulica>
-					<Ulica1><%= narocnik[0].Address %></Ulica1>
+					<Ulica1><%= stranka[0].Address %></Ulica1>
 				</Ulica>
-				<Kraj><%= narocnik[0].City %></Kraj>
- 				<NazivDrzave><%= narocnik[0].Country %></NazivDrzave>
-				<PostnaStevilka><%= narocnik[0].PostalCode %></PostnaStevilka>
+				<Kraj><%= stranka[0].City %></Kraj>
+ 				<NazivDrzave><%= stranka[0].Country %></NazivDrzave>
+				<PostnaStevilka><%= stranka[0].PostalCode %></PostnaStevilka>
 				<KodaDrzave></KodaDrzave>
 			</NazivNaslovPodjetja>
 			<FinancniPodatkiPodjetja>
@@ -208,14 +208,14 @@
 			</ReferencniPodatkiPodjetja>
 			<KontaktiPodjetja>
 				<KontaktnaOseba>
-					<ImeOsebe><%= narocnik[0].FirstName%> <%=narocnik[0].LastName %></ImeOsebe>
+					<ImeOsebe><%= stranka[0].FirstName%> <%=stranka[0].LastName %></ImeOsebe>
 				</KontaktnaOseba>
 				<Komunikacije>
-					<StevilkaKomunikacije><%= narocnik[0].Phone %></StevilkaKomunikacije>
+					<StevilkaKomunikacije><%= stranka[0].Phone %></StevilkaKomunikacije>
 					<VrstaKomunikacije>TE</VrstaKomunikacije>
 				</Komunikacije>
 				<Komunikacije>
-					<StevilkaKomunikacije><%= narocnik[0].Fax %></StevilkaKomunikacije>
+					<StevilkaKomunikacije><%= stranka[0].Fax %></StevilkaKomunikacije>
 					<VrstaKomunikacije>FX</VrstaKomunikacije>
 				</Komunikacije>
 			</KontaktiPodjetja>

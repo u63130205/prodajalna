@@ -161,14 +161,14 @@ var strankaIzRacuna = function(racunId, callback) {
 // Izpis računa v HTML predstavitvi na podlagi podatkov iz baze
 streznik.post('/izpisiRacunBaza', function(zahteva, odgovor) {
   var form =new formidable.IncomingForm();
-    form.parse(zahteva, function(napaka2, polja, datoteke){
-      pesmiIzRacuna(polja.seznamRacunov, function(pesmi){
-        strankaIzRacuna(polja.seznamRacunov, function(stranka){
+  form.parse(zahteva, function(napaka2, polja, datoteke){
+    pesmiIzRacuna(polja.seznamRacunov, function(pesmi){
+      strankaIzRacuna(polja.seznamRacunov, function(stranka){
         odgovor.setHeader('content-type', 'text/xml');
         odgovor.render('eslog', {vizualiziraj: true, postavkeRacuna: pesmi, stranka: stranka});
       });
     });
-   
+    
   });
 })
 
