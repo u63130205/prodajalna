@@ -157,6 +157,7 @@ var strankaIzRacuna = function(racunId, callback) {
     })
 }
 
+
 // Izpis računa v HTML predstavitvi na podlagi podatkov iz baze
 streznik.post('/izpisiRacunBaza', function(zahteva, odgovor) {
   var form =new formidable.IncomingForm();
